@@ -1,0 +1,12 @@
+{
+  "title": "Game One",
+  "description": "An exciting adventure game where you explore vast landscapes and solve intricate puzzles.",
+  "developer": "Dev Studio",
+  "osPaths": {
+    "windows": "C:\\games\\game1\\executable1.exe",
+    "mac": "/Users/username/games/game1/executable1",
+    "linux": "/home/username/games/game1/executable1"
+  },
+  "libraryCardImage": "http://example.com/path/to/library/card/image1.png",
+  "bannerImage": "http://example.com/path/to/banner/image1.png"
+}

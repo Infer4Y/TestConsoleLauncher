@@ -1,0 +1,42 @@
+plugins {
+    id 'idea'
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group = 'inferno'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://www.jetbrains.com/idea/idea-gradle-plugin-repository'
+    }
+}
+
+dependencies {
+    implementation('com.formdev:flatlaf:3.5')
+    implementation 'com.formdev:flatlaf-intellij-themes:3.5'
+    implementation 'com.intellij:forms_rt:7.0.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+    implementation 'com.fazecast:jSerialComm:2.6.2'
+}
+application {
+    mainClassName = 'inferno.Main'  // Replace with your main class
+}
+
+shadowJar {
+    archiveBaseName.set('menu-system-jdk21')
+    archiveClassifier.set('')
+    archiveVersion.set(version)
+    mergeServiceFiles()
+}
+
+tasks.build {
+    dependsOn shadowJar
+}
+
+test {
+    useJUnitPlatform()
+}

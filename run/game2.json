@@ -1,0 +1,12 @@
+{
+  "title": "Game Two",
+  "description": "A thrilling puzzle game that challenges your mind with complex problems.",
+  "developer": "Puzzle Corp",
+  "osPaths": {
+    "windows": "C:\\games\\game2\\executable2.exe",
+    "mac": "/Users/username/games/game2/executable2",
+    "linux": "/home/username/games/game2/executable2"
+  },
+  "libraryCardImage": "http://example.com/path/to/library/card/image2.png",
+  "bannerImage": "http://example.com/path/to/banner/image2.png"
+}
