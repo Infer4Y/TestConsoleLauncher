@@ -19,7 +19,7 @@ dependencies {
     implementation('com.formdev:flatlaf:3.5')
     implementation 'com.formdev:flatlaf-intellij-themes:3.5'
     implementation 'com.intellij:forms_rt:7.0.3'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4.2'
     implementation 'com.fazecast:jSerialComm:2.6.2'
 }
 application {

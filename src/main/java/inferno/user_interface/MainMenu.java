@@ -89,11 +89,10 @@ public class MainMenu {
 
                 if (os.contains("win")) {
                     // Windows
-                    //Runtime.getRuntime().exec("shutdown -r -t 0");
+                    Runtime.getRuntime().exec("shutdown -r -t 0");
                 } else if (os.contains("nix") || os.contains("nux") || os.contains("mac")) {
                     // Unix/Linux/Mac
                     Runtime.getRuntime().exec("reboot");
-                    ;
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -113,9 +112,9 @@ public class MainMenu {
                     shutdownCommand = new String[]{"shutdown", "-h", "now"};
                 }
                 // This will work on any version of windows including version 11
-                //else if (operatingSystem.contains("Windows")) {
-                //shutdownCommand = new String[]{"shutdown.exe","-s","-t","0"};
-                //}
+                else if (operatingSystem.contains("Windows")) {
+                    shutdownCommand = new String[]{"shutdown.exe","-s","-t","0"};
+                }
                 Runtime.getRuntime().exec(shutdownCommand);
             } catch (IOException ex) {
 
